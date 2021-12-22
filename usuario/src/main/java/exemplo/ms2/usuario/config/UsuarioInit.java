@@ -15,12 +15,12 @@ public class UsuarioInit implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        var usuario = Usuario.builder()
+        Usuario usuario = Usuario.builder()
                 .nome("Nataniel Paiva")
                 .email("nataniel.paiva@gmail.com")
                 .build();
         usuarioRepository.save(usuario);
-        var usuario2 = Usuario.builder()
+        Usuario usuario2 = Usuario.builder()
                 .nome("Nataniel Amorim")
                 .email("nataniel.paiva@gmail.com")
                 .build();

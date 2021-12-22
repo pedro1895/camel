@@ -9,7 +9,7 @@ import org.apache.camel.Processor;
 public class ThrowExceptionProcessor implements Processor {
     @Override
     public void process(Exchange exchange) {
-        var exception = new Exception("Alguma coisa caiu aê");
+        Exception exception = new Exception("Alguma coisa caiu aê");
         exchange.setException(exception);
         log.info("!---- deu ruim");
     }
